@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", function () {
                     </div>
                     <div class="col-md-8">
                         <div class="card-body">
-                            <h5 class="card-title">${country.name}</h5>
-                            <p class="card-text">Capital: ${country.capital_city}</p>
+                            <h3 class="card-title">${country.name}</h5>
+                            <p class="card-text">Capital: ${country.capital_city_name}</p>
                         </div>
                     </div>
                 </div>
@@ -37,6 +37,7 @@ document.addEventListener("DOMContentLoaded", function () {
         </div>
     `;
   };
+
 
   // Fetch country by index for next/previous functionality
   const fetchCountryByIndex = (index) => {

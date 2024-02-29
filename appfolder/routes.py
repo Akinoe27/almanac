@@ -29,7 +29,7 @@ def fetch_countries():
         country_data = {
             'id': country[0],
             'name': country[1],
-            'capital_city': country[2],
+            'capital_city_name': country[2],
             'flag_image_path': country[3]
         }
         return jsonify(country_data)
@@ -47,7 +47,7 @@ def search():
     cur.close()
 
     countries_data = [
-        {'id': country[0], 'name': country[1], 'capital_city': country[2], 'flag_image_path': country[3]}
+        {'id': country[0], 'name': country[1], 'capital_city_name': country[2], 'flag_image_path': country[3]}
         for country in countries
     ]
     return jsonify(countries_data)
